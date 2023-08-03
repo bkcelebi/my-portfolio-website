@@ -20,6 +20,7 @@ html,
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 /*
   Typographic tweaks!
@@ -71,36 +72,62 @@ h6 {
 }
 /* ############ CSS RESET ENDS ############# */
 
-.container {
-  /* padding: 1rem; */
-}
+/* .container {
+} */
 
 header {
   display: grid;
   grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
   gap: 10px;
   justify-items: start;
   padding: 1rem;
 }
 
-.profilePic {
+.nav {
+  display: none;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+header a {
+  padding: 1rem 1rem;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+header a:hover {
+  background: #ececeb;
+}
+
+.active {
+  background: white;
+}
+
+.burgerNav {
+  align-self: center;
+  justify-self: end;
+}
+
+#xIcon {
+  display: none;
+}
+
+.profile {
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: bold;
 }
 
-.profilePic img {
+.profile img {
   border-radius: 50%;
 }
 
 .name {
   letter-spacing: 0.2rem;
-}
-
-.nav {
-  align-self: center;
-  justify-self: center;
 }
 
 main {
@@ -130,7 +157,7 @@ main {
 .contactBtn,
 .cardBtn {
   width: 200px;
-  padding: 0.5rem 3rem;
+  padding: 1rem 3rem;
   background: #7843e9;
   border: none;
   border-radius: 0.5rem;
@@ -217,14 +244,15 @@ main {
 
 .projects {
   background: #ececeb;
+  padding-bottom: 6rem;
 }
 
-.projectCard {
+.projectCardOne {
   padding-bottom: 5rem;
 }
 
 .cardImg {
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .cardBtn {
@@ -243,6 +271,7 @@ main {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 footer {

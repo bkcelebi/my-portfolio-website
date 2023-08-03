@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Burak Kamilcelebi | KC_DEV | Software Developer Graduate</title>
+    <title>Burak Kamilcelebi | KC_DEV | Software Development Graduate</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,11 +18,12 @@
       src="https://kit.fontawesome.com/5c9a0150f6.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <div class="container">
       <header>
-        <div class="profilePic">
+        <div class="profile">
           <img
             src="./assets/profilePic.JPG"
             loading="lazy"
@@ -35,8 +36,18 @@
             <p class="name">KAMILCELEBI</p>
           </div>
         </div>
+        <a class="burgerNav" href="javascript:void(0);" onclick="toggle()">
+          <i
+            id="burgerIcon"
+            class="fa-solid fa-bars fa-xl"
+            style="color: #7843e9"
+          ></i>
+          <i id="xIcon" class="fa-solid fa-x fa-xl" style="color: #7843e9"></i>
+        </a>
         <div class="nav">
-          <i class="fa-solid fa-bars fa-xl" style="color: #7843e9"></i>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
       </header>
       <main>
@@ -47,11 +58,11 @@
             Praesentium nulla exercitationem voluptas fugiat quo blanditiis
             neque impedit quis iste distinctio?
           </p>
-          <button class="projectBtn">PROJECTS</button>
+          <a href="#projects" class="projectBtn">PROJECTS</a>
         </div>
 
         <div class="aboutMe">
-          <div class="mainHeadings">ABOUT ME</div>
+          <div class="mainHeadings" id="about">ABOUT ME</div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem
             eum quis molestias odio. Nam voluptatum consectetur exercitationem
@@ -76,35 +87,36 @@
             </p>
 
             <div class="contactBtnDiv">
-              <button class="contactBtn">CONTACT</button>
+              <a href="#contact" class="contactBtn">CONTACT</a>
             </div>
 
             <div class="skillSection">
               <div class="skillsHeading">My Skills</div>
               <div class="skills">
-                <span>Skill1</span>
-                <span>Skill2</span>
-                <span>Skill3</span>
-                <span>Skill4</span>
-                <span>Skill5</span>
-                <span>Skill6</span>
-                <span>Skill7</span>
-                <span>Skill8</span>
-                <span>Skill9</span>
-                <span>Skill10</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+                <span>SASS Basics</span>
+                <span>HTML5</span>
+                <span>Python</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>React Basics</span>
+                <span>SQL Basics</span>
+                <span>Responsive Design</span>
+                <span>Terminal</span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="projects">
-          <div class="mainHeadings">PROJECTS</div>
+          <div class="mainHeadings" id="projects">PROJECTS</div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem
             eum quis molestias odio. Nam voluptatum consectetur exercitationem
             blanditiis aliquam!
           </p>
-          <div class="projectCard">
+          <div class="projectCard projectCardOne">
             <img
               class="cardImg"
               src="./assets/projects.png"
@@ -124,7 +136,7 @@
         </div>
 
         <div class="contact">
-          <div class="mainHeadings">CONTACT</div>
+          <div class="mainHeadings" id="contact">CONTACT</div>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
             unde tempora ad enim exercitationem sequi nemo asperiores laboriosam

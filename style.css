@@ -116,7 +116,7 @@ main {
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  background: #efefef;
+  background: #ececeb;
 }
 
 .greeting {
@@ -126,8 +126,10 @@ main {
   letter-spacing: 0.2rem;
 }
 
-.projectBtn {
-  width: 60%;
+.projectBtn,
+.contactBtn,
+.cardBtn {
+  width: 200px;
   padding: 0.5rem 3rem;
   background: #7843e9;
   border: none;
@@ -135,4 +137,160 @@ main {
   color: white;
   font-weight: bold;
   letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.projectBtn:hover,
+.contactBtn:hover,
+.cardBtn:hover {
+  opacity: 0.5;
+}
+
+.aboutMe {
+  text-align: left;
+}
+
+.mainHeadings {
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5rem;
+  position: relative;
+}
+
+.mainHeadings + p {
+  padding: 0.5rem 1rem 5rem 1rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.mainHeadings::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 5px;
+  background: #7843e9;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% + 1rem);
+  border-radius: 0.5rem;
+}
+
+.detailsHeading,
+.skillsHeading {
+  padding-left: 0.7rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.skillsHeading {
+  padding-bottom: 1rem;
+}
+
+.details p {
+  padding: 0.7rem;
+}
+
+.contactBtnDiv {
+  padding: 1rem 0 0 0.7rem;
+}
+
+.skillSection {
+  padding-top: 5rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0.7rem;
+  padding-bottom: 5rem;
+}
+
+.skills span {
+  background: #efefef;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  color: #5f5f5f;
+}
+
+.projects {
+  background: #ececeb;
+}
+
+.projectCard {
+  padding-bottom: 5rem;
+}
+
+.cardImg {
+  padding-bottom: 2rem;
+}
+
+.cardBtn {
+  padding: 1rem 1rem;
+}
+
+.contactSection {
+  text-align: left;
+  padding: 0 0 3rem 1rem;
+}
+
+.contactDetails {
+  display: flex;
+  gap: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background: black;
+  color: white;
+  font-weight: bolder;
+  padding: 3rem 0.7rem;
+}
+
+.footerHeading {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.socialAccounts {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 3rem;
+}
+
+.footerName {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 15px;
+
+  font-weight: bold;
+  background: #efefef;
+  padding: 0.5rem 0;
+  color: black;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.copyright {
+  justify-self: end;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  text-decoration: none;
+  color: black;
 }

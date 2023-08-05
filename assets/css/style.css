@@ -81,6 +81,9 @@ header {
   gap: 10px;
   justify-items: start;
   padding: 1rem;
+  position: relative;
+  z-index: 1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .nav {
@@ -141,17 +144,44 @@ main {
 }
 
 .hero {
-  padding: 5rem 1rem;
+  padding: 7rem 1rem;
   display: flex;
   flex-direction: column;
+  font-size: 1rem;
+  font-weight: bold;
   gap: 30px;
+  color: white;
   align-items: center;
   text-align: center;
-  background: #ececeb;
+  background: no-repeat linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/assets/imgs/heroBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 13px 6px;
+}
+
+.heroCompleted {
+  background: no-repeat linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/assets/imgs/heroBackground3.jpg");
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 13px 6px;
+}
+
+.heroUpcoming {
+  background: no-repeat linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/assets/imgs/heroBackground2.jpg");
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 13px 6px;
 }
 
 .greeting {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 3rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
@@ -164,8 +194,7 @@ p {
 
 .projectBtn,
 .contactBtn,
-.cardBtn,
-.projectsWelcome {
+.cardBtn {
   padding: 1rem 3rem;
   background: #7843e9;
   border: none;
@@ -176,10 +205,20 @@ p {
   cursor: pointer;
 }
 
-.projectBtn:hover,
+.projectBtn {
+  background: transparent;
+  border: 3px solid #7843e9;
+  font-size: 1.3rem;
+}
+
+.projectBtn:hover {
+  background: white;
+  border: 3px solid white;
+  color: #7843e9;
+}
+
 .contactBtn:hover,
-.cardBtn:hover,
-.projectsWelcome:hover {
+.cardBtn:hover {
   opacity: 0.5;
 }
 
@@ -490,9 +529,20 @@ footer {
 }
 
 @media (min-width: 900px) {
+  .hero {
+    font-size: 1.2rem;
+    padding: 11rem 1rem;
+  }
+
+  .projectBtn {
+    border: 3px solid #7843e9;
+    font-size: 1.5rem;
+  }
+
   .aboutMe {
     padding-bottom: 5rem;
   }
+
   .details {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -540,6 +590,10 @@ footer {
     padding-bottom: 0;
   }
 
+  .potentialTools {
+    padding-bottom: 3rem;
+  }
+
   .linkWrap {
     padding-top: 2rem;
     padding-bottom: 3rem;
@@ -551,8 +605,22 @@ footer {
 }
 
 @media (min-width: 1300px) {
+  .hero {
+    padding: 15rem 1rem;
+  }
+
   .aboutMe {
     max-width: 80%;
     margin: 0 auto;
+  }
+
+  .potentialTools {
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .hero {
+    padding: 18rem 1rem;
   }
 }

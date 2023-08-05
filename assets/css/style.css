@@ -154,7 +154,7 @@ main {
   align-items: center;
   text-align: center;
   background: no-repeat linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/assets/imgs/heroBackground.jpg");
+    url("assets/imgs/heroBackground.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -164,7 +164,7 @@ main {
 
 .heroCompleted {
   background: no-repeat linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/assets/imgs/heroBackground3.jpg");
+    url("assets/imgs/heroBackground3.jpg");
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -173,7 +173,7 @@ main {
 
 .heroUpcoming {
   background: no-repeat linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/assets/imgs/heroBackground2.jpg");
+    url("assets/imgs/heroBackground2.jpg");
   background-size: cover;
   position: relative;
   z-index: 1;

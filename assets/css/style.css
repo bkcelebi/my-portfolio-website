@@ -74,6 +74,29 @@ h6 {
 
 /* ##### HEADER ##### */
 
+.progress {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  width: 4rem;
+  height: 4rem;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.progressValue {
+  display: block;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  background-color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
 header {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -198,11 +221,21 @@ p {
   padding: 1rem 3rem;
   background: #7843e9;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   color: white;
   font-weight: bold;
   letter-spacing: 0.1rem;
   cursor: pointer;
+}
+
+button[disabled] {
+  padding: 1rem 3rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  cursor: not-allowed;
+  display: none;
 }
 
 .projectBtn {
@@ -281,6 +314,36 @@ p {
   padding: 1rem;
 }
 
+blockquote {
+  text-align: center;
+  padding: 0.5rem;
+  max-width: 700px;
+}
+
+q {
+  font-style: italic;
+  position: relative;
+  font-weight: 600;
+}
+
+q::before {
+  content: "“";
+  position: absolute;
+  top: -1rem;
+  left: -1.4rem;
+  font: 2.8rem Georgia, serif;
+  color: #7843e9;
+}
+
+q::after {
+  content: "”";
+  position: absolute;
+  bottom: -2.5rem;
+  right: -1.5rem;
+  font: 2.8rem Georgia, serif;
+  color: #7843e9;
+}
+
 .contactBtnDiv {
   padding: 1rem 0 0 0.7rem;
 }
@@ -295,7 +358,7 @@ p {
   flex-wrap: wrap;
   gap: 10px;
   padding: 1rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .skills span,
@@ -306,27 +369,29 @@ p {
   color: #5f5f5f;
 }
 
-.progress {
-  position: fixed;
-  left: 1rem;
-  bottom: 1rem;
-  width: 4rem;
-  height: 4rem;
-  display: none;
-  place-items: center;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 999;
+.platform {
+  width: 20px;
 }
 
-.progressValue {
-  display: block;
-  height: calc(100% - 10px);
-  width: calc(100% - 10px);
-  background-color: white;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
+.badge,
+.cv {
+  padding: 3rem 0 5rem 1rem;
+}
+
+.badge .badgesHeading {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.badgesSection,
+.cvSection {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.badgesSection {
+  padding-top: 0;
 }
 
 /* ##### ABOUT ENDS ##### */
@@ -425,7 +490,7 @@ p {
 }
 
 .cardBtn {
-  padding: 1rem 1rem;
+  padding: 1rem 1.5rem;
 }
 
 /* ##### PROJECT ENDS ##### */
@@ -510,6 +575,11 @@ footer {
 
 /* ##### FOOTER ENDS ##### */
 
+.italic {
+  font-style: italic;
+  font-size: 14px;
+}
+
 @media (min-width: 600px) {
   header {
     grid-template-rows: auto;
@@ -526,6 +596,10 @@ footer {
 
   .cardImg {
     max-width: 70%;
+  }
+
+  button[disabled] {
+    display: block;
   }
 
   footer {

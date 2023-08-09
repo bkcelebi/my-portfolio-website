@@ -26,6 +26,11 @@ const popUp = () => {
   sidebarIcons.style.display = "flex";
 };
 
+const sidebarLinks = document.querySelector("body");
+sidebarLinks.addEventListener("touchstart", (e) => {
+  // console.log(e);
+});
+
 const collapse = () => {
   const shortcuts = document.querySelector(".shortcuts");
   const sidebarIcons = document.querySelector(".sidebarIcons");

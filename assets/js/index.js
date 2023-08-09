@@ -42,6 +42,14 @@ body.addEventListener("click", () => {
   collapse();
 });
 
+if (!navigator.share) {
+  const clipboardIcon = document.querySelector("#clipboardIcon");
+  const shareIcon = document.querySelector("#shareIcon");
+  clipboardIcon.style.display = "block";
+  clipboardIcon.style.paddingTop = ".5rem";
+  shareIcon.style.display = "none";
+}
+
 const share = () => {
   if (navigator.share) {
     navigator.share({

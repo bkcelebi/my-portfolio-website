@@ -115,6 +115,10 @@ h6 {
   cursor: pointer;
 }
 
+.sidebarIcons a:hover {
+  opacity: 0.5;
+}
+
 .sidebarLinks {
   position: absolute;
   top: 0;
@@ -128,6 +132,10 @@ h6 {
 
 .shortcuts {
   display: block;
+}
+
+#clipboardIcon {
+  display: none;
 }
 
 header {

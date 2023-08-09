@@ -37,8 +37,8 @@ const collapse = () => {
   sidebarLinks.style.padding = "1rem 0.5rem";
 };
 
-const html = document.querySelector("html");
-html.addEventListener("click", () => {
+const body = document.querySelector("body");
+body.addEventListener("click", () => {
   collapse();
 });
 

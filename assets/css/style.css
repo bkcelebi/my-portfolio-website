@@ -99,7 +99,7 @@ h6 {
 
 .sidebar {
   position: fixed;
-  top: 7rem;
+  top: 6.5rem;
   left: 0;
   z-index: 999;
 }
@@ -110,17 +110,17 @@ h6 {
   position: absolute;
   gap: 1rem;
   padding: 1.2rem 0.7rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 0.2rem;
   cursor: pointer;
 }
 
 .sidebarLinks {
   position: absolute;
-  top: 5rem;
-  left: 0rem;
+  top: 0;
+  left: 0;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   padding: 1rem 0.5rem;
   border-top-right-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
@@ -197,6 +197,7 @@ main {
   display: grid;
   grid-template-rows: repeat(4, auto);
   line-height: 2rem;
+  position: relative;
 }
 
 .hero {

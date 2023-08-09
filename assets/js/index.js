@@ -26,8 +26,8 @@ const popUp = () => {
   sidebarIcons.style.display = "flex";
 };
 
-const sidebarLinks = document.querySelector("body");
-sidebarLinks.addEventListener("touchstart", (e) => {
+const body = document.querySelector("body");
+body.addEventListener("touchstart", (e) => {
   // console.log(e);
 });
 

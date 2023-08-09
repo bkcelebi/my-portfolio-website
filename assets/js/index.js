@@ -15,6 +15,40 @@ const toggle = () => {
   }
 };
 
+const popUp = () => {
+  const shortcuts = document.querySelector(".shortcuts");
+  const sidebarIcons = document.querySelector(".sidebarIcons");
+  const sidebarLinks = document.querySelector(".sidebarLinks");
+
+  sidebarLinks.style.left = "0";
+  sidebarLinks.style.padding = "0";
+  shortcuts.style.display = "none";
+  sidebarIcons.style.display = "flex";
+};
+
+const collapse = () => {
+  const shortcuts = document.querySelector(".shortcuts");
+  const sidebarIcons = document.querySelector(".sidebarIcons");
+  const sidebarLinks = document.querySelector(".sidebarLinks");
+
+  shortcuts.style.display = "block";
+  sidebarIcons.style.display = "none";
+  sidebarLinks.style.left = "0";
+  sidebarLinks.style.padding = "1rem 0.5rem";
+};
+
+const share = () => {
+  if (navigator.share) {
+    navigator.share({
+      text: "Burak KAMILCELEBI Portfolio Website",
+      url: "https://bkcelebi.github.io/portfolio/",
+      title: "Burak Kamilcelebi | KC_DEV | Software Development Graduate",
+    });
+  } else {
+    navigator.clipboard.writeText("https://bkcelebi.github.io/portfolio/");
+  }
+};
+
 const calcScrollValue = () => {
   let scrollProgress = document.querySelector(".progress");
   let pos = document.documentElement.scrollTop;

@@ -18,10 +18,10 @@ const toggle = () => {
 const popUp = () => {
   const shortcuts = document.querySelector(".shortcuts");
   const sidebarIcons = document.querySelector(".sidebarIcons");
-  const sidebarLinks = document.querySelector(".sidebarLinks");
+  const sidebarHandle = document.querySelector(".sidebarHandle");
 
-  sidebarLinks.style.left = "0";
-  sidebarLinks.style.padding = "0";
+  sidebarHandle.style.left = "0";
+  sidebarHandle.style.padding = "0";
   shortcuts.style.display = "none";
   sidebarIcons.style.display = "flex";
 };
@@ -29,12 +29,12 @@ const popUp = () => {
 const collapse = () => {
   const shortcuts = document.querySelector(".shortcuts");
   const sidebarIcons = document.querySelector(".sidebarIcons");
-  const sidebarLinks = document.querySelector(".sidebarLinks");
+  const sidebarHandle = document.querySelector(".sidebarHandle");
 
   shortcuts.style.display = "block";
   sidebarIcons.style.display = "none";
-  sidebarLinks.style.left = "0";
-  sidebarLinks.style.padding = "1rem 0.5rem";
+  sidebarHandle.style.left = "0";
+  sidebarHandle.style.padding = "1rem 0.5rem";
 };
 
 const body = document.querySelector("body");
@@ -46,7 +46,8 @@ if (!navigator.share) {
   const clipboardIcon = document.querySelector("#clipboardIcon");
   const shareIcon = document.querySelector("#shareIcon");
   clipboardIcon.style.display = "block";
-  clipboardIcon.style.paddingTop = ".5rem";
+  clipboardIcon.style.paddingTop = ".9rem";
+  clipboardIcon.style.paddingBottom = ".7rem";
   shareIcon.style.display = "none";
 }
 

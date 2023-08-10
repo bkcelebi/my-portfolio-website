@@ -98,8 +98,8 @@ h6 {
 }
 
 .sidebar {
-  position: fixed;
-  top: 6.5rem;
+  position: sticky;
+  top: 1rem;
   left: 0;
   z-index: 999;
 }
@@ -116,10 +116,10 @@ h6 {
 }
 
 .sidebarIcons a:hover {
-  opacity: 0.5;
+  transform: scale(1.1);
 }
 
-.sidebarLinks {
+.sidebarHandle {
   position: absolute;
   top: 0;
   left: 0;
@@ -128,6 +128,7 @@ h6 {
   padding: 1rem 0.5rem;
   border-top-right-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
+  border-left: 0.2rem ridge rgba(0, 0, 0, 0.4);
 }
 
 .shortcuts {

@@ -66,94 +66,6 @@ const share = () => {
   }
 };
 
-//Clipboard
-const cvCopy = document.querySelector(".cvCopy");
-const badgesCopy = document.querySelector(".badgesCopy");
-const mailCopy = document.querySelector(".mailCopy");
-const linkedinCopy = document.querySelector(".linkedinCopy");
-const githubCopy = document.querySelector(".githubCopy");
-
-cvCopy.addEventListener("click", () => {
-  const invisible = document.querySelector("#invisibleCV");
-  const visible = document.querySelector("#visibleCV");
-
-  visible.style.display = "none";
-  invisible.style.display = "inline";
-
-  setTimeout(() => {
-    invisible.style.display = "none";
-    visible.style.display = "inline";
-  }, 300);
-
-  navigator.clipboard.writeText(
-    "https://drive.google.com/file/d/1p1C_IXYXidmjBetOQKUpuoFktetc76rw/view?usp=sharing"
-  );
-});
-
-badgesCopy.addEventListener("click", () => {
-  const invisible = document.querySelector("#invisibleBadge");
-  const visible = document.querySelector("#visibleBadge");
-
-  visible.style.display = "none";
-  invisible.style.display = "inline";
-
-  setTimeout(() => {
-    visible.style.display = "inline";
-    invisible.style.display = "none";
-  }, 300);
-
-  navigator.clipboard.writeText(
-    "https://www.credly.com/users/burak-kamilcelebi/badges"
-  );
-});
-
-mailCopy.addEventListener("click", () => {
-  const invisible = document.querySelector("#invisibleMail");
-  const visible = document.querySelector("#visibleMail");
-
-  visible.style.display = "none";
-  invisible.style.display = "inline";
-
-  setTimeout(() => {
-    visible.style.display = "inline";
-    invisible.style.display = "none";
-  }, 300);
-
-  navigator.clipboard.writeText("burakkamilcelebi@gmail.com");
-});
-
-linkedinCopy.addEventListener("click", () => {
-  const invisible = document.querySelector("#invisibleLinkedin");
-  const visible = document.querySelector("#visibleLinkedin");
-
-  visible.style.display = "none";
-  invisible.style.display = "inline";
-
-  setTimeout(() => {
-    visible.style.display = "inline";
-    invisible.style.display = "none";
-  }, 300);
-
-  navigator.clipboard.writeText(
-    "https://www.linkedin.com/in/burak-kamilcelebi/"
-  );
-});
-
-githubCopy.addEventListener("click", () => {
-  const invisible = document.querySelector("#invisibleGithub");
-  const visible = document.querySelector("#visibleGithub");
-
-  visible.style.display = "none";
-  invisible.style.display = "inline";
-
-  setTimeout(() => {
-    visible.style.display = "inline";
-    invisible.style.display = "none";
-  }, 300);
-
-  navigator.clipboard.writeText("https://github.com/bkcelebi");
-});
-
 //scroll up
 const calcScrollValue = () => {
   let scrollProgress = document.querySelector(".progress");
@@ -175,3 +87,91 @@ const calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+//Clipboard
+const cvCopy = document.querySelector(".cvCopy");
+const badgesCopy = document.querySelector(".badgesCopy");
+const mailCopy = document.querySelector(".mailCopy");
+const linkedinCopy = document.querySelector(".linkedinCopy");
+const githubCopy = document.querySelector(".githubCopy");
+
+cvCopy.addEventListener("click", () => {
+  const invisible = document.querySelector("#invisibleCV");
+  const visible = document.querySelector("#visibleCV");
+
+  visible.style.display = "none";
+  invisible.style.display = "inline";
+
+  setTimeout(() => {
+    invisible.style.display = "none";
+    visible.style.display = "inline";
+  }, 1000);
+
+  navigator.clipboard.writeText(
+    "https://drive.google.com/file/d/1p1C_IXYXidmjBetOQKUpuoFktetc76rw/view?usp=sharing"
+  );
+});
+
+badgesCopy.addEventListener("click", () => {
+  const invisible = document.querySelector("#invisibleBadge");
+  const visible = document.querySelector("#visibleBadge");
+
+  visible.style.display = "none";
+  invisible.style.display = "inline";
+
+  setTimeout(() => {
+    visible.style.display = "inline";
+    invisible.style.display = "none";
+  }, 1000);
+
+  navigator.clipboard.writeText(
+    "https://www.credly.com/users/burak-kamilcelebi/badges"
+  );
+});
+
+mailCopy.addEventListener("click", () => {
+  const invisible = document.querySelector("#invisibleMail");
+  const visible = document.querySelector("#visibleMail");
+
+  visible.style.display = "none";
+  invisible.style.display = "inline";
+
+  setTimeout(() => {
+    visible.style.display = "inline";
+    invisible.style.display = "none";
+  }, 1000);
+
+  navigator.clipboard.writeText("burakkamilcelebi@gmail.com");
+});
+
+linkedinCopy.addEventListener("click", () => {
+  const invisible = document.querySelector("#invisibleLinkedin");
+  const visible = document.querySelector("#visibleLinkedin");
+
+  visible.style.display = "none";
+  invisible.style.display = "inline";
+
+  setTimeout(() => {
+    visible.style.display = "inline";
+    invisible.style.display = "none";
+  }, 1000);
+
+  navigator.clipboard.writeText(
+    "https://www.linkedin.com/in/burak-kamilcelebi/"
+  );
+});
+
+githubCopy.addEventListener("click", () => {
+  const invisible = document.querySelector("#invisibleGithub");
+  const visible = document.querySelector("#visibleGithub");
+
+  visible.style.display = "none";
+  invisible.style.display = "inline";
+
+  setTimeout(() => {
+    visible.style.display = "inline";
+    invisible.style.display = "none";
+  }, 1000);
+
+  navigator.clipboard.writeText("https://github.com/bkcelebi");
+});

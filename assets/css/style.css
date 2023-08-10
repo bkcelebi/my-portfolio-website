@@ -351,12 +351,13 @@ button[disabled] {
 
 .details p {
   padding: 1rem;
+  max-width: 900px;
 }
 
 blockquote {
   text-align: center;
   padding: 0.5rem;
-  max-width: 700px;
+  max-width: 900px;
 }
 
 q {
@@ -435,6 +436,14 @@ q::after {
 .linkedinCopy,
 .githubCopy {
   cursor: pointer;
+}
+
+.cvCopy:hover,
+.badgesCopy:hover,
+.mailCopy:hover,
+.linkedinCopy:hover,
+.githubCopy:hover {
+  transform: scale(1.2);
 }
 
 #invisibleCV,
@@ -559,8 +568,10 @@ q::after {
 }
 
 .contactSection {
-  text-align: left;
-  padding: 0 0 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  width: 350px;
 }
 
 .contactDetails {
@@ -571,6 +582,63 @@ q::after {
 a {
   text-decoration: none;
   color: black;
+}
+
+.formContainer {
+  display: grid;
+  width: 100%;
+}
+
+.form {
+  margin: 1rem;
+  border: 1px solid #ececeb;
+  overflow: hidden;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+}
+
+form:last-child {
+  padding-bottom: 2rem;
+}
+
+input,
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  margin-top: 1rem;
+  background: white;
+  border: none;
+  color: white;
+  background: #7843e9;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  padding: 0.5rem 3rem;
+  align-self: flex-start;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.1);
 }
 
 /* ##### CONTACT ENDS ##### */
@@ -657,6 +725,25 @@ footer {
     display: block;
   }
 
+  .formSection {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .formSection:first-child {
+    padding-top: 1rem;
+  }
+
+  label {
+    width: 8rem;
+    text-align: right;
+  }
+
+  input,
+  textarea {
+    width: 80%;
+  }
+
   footer {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -716,8 +803,9 @@ footer {
 
   .projectRectangleCard {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 1fr 1fr;
     padding-top: 3rem;
+    gap: 1rem;
   }
 
   .projectRectangleCard::before {
@@ -736,6 +824,11 @@ footer {
   .cardImg {
     padding-top: 0;
     max-width: 80%;
+    justify-self: end;
+  }
+
+  button[disabled] {
+    display: none;
   }
 
   .toolsHeading {
@@ -772,6 +865,12 @@ footer {
 
   .potentialTools {
     padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  button[disabled] {
+    display: block;
   }
 }
 

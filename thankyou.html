@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burak Kamilcelebi | KC_DEV | Software Development Graduate</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/imgs/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5c9a0150f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="profile">
+        <img
+          src="https://avatars.githubusercontent.com/u/98746081?v=4"
+          loading="lazy"
+          alt="Profile Picture"
+          width="60px"
+          height="60px"
+        />
+        <div>
+          <p class="name">BURAK</p>
+          <p class="name">KAMILCELEBI</p>
+        </div>
+      </div>
+      <a class="burgerNav" onclick="toggle()">
+        <i
+          id="burgerIcon"
+          class="fa-solid fa-bars fa-xl"
+          style="color: #7843e9"
+        ></i>
+        <i id="xIcon" class="fa-solid fa-x fa-xl" style="color: #7843e9"></i>
+      </a>
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar" onmouseover="popUp()" onmouseout="collapse()">
+        <div class="sidebarIcons">
+          <a href="mailto:burakkamilcelebi@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope fa-xl" style="color: #7843e9"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/burak-kamilcelebi/"
+            target="_blank"
+          >
+            <i
+              class="fa-brands fa-linkedin-in fa-xl"
+              style="color: #7843e9"
+            ></i>
+          </a>
+          <a href="https://github.com/bkcelebi" target="_blank">
+            <i class="fa-brands fa-github fa-xl" style="color: #7843e9"></i>
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1p1C_IXYXidmjBetOQKUpuoFktetc76rw/view?usp=sharing"
+            target="_blank"
+          >
+            <i class="fa-regular fa-file fa-xl" style="color: #7843e9"></i>
+          </a>
+          <a onclick="share()" target="_blank">
+            <i
+              class="fa-solid fa-share-nodes fa-xl"
+              id="shareIcon"
+              style="color: #7843e9"
+            ></i>
+            <i
+              class="fa-regular fa-copy fa-xl"
+              id="clipboardIcon"
+              style="color: #7843e9"
+            ></i>
+          </a>
+        </div>
+        <a class="sidebarHandle" onmouseover="popUp()">
+          <div class="shortcuts">
+            <i class="fa-solid fa-link fa-xl" style="color: #7843e9"></i>
+          </div>
+        </a>
+      </div>
+
+      <h2>Thank You!</h2>
+    <footer>
+      <div class="socialContainer">
+        <div class="footerHeading">FIND ME ON</div>
+        <div class="socialAccounts">
+          <a href="https://github.com/bkcelebi" target="_blank"
+            ><i class="fa-brands fa-github fa-xl" style="color: #ffffff"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/burak-kamilcelebi/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="footerAboutContainer">
+        <p class="name footerName">BURAK KAMILCELEBI</p>
+        <p>
+          A Web Development focused Software Development Graduate building
+          Websites and Web Applications.
+        </p>
+      </div>
+
+      <div class="footer">
+        <p class="copyright">
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+        <a href="https://github.com/bkcelebi" target="_blank">
+          <img
+            src="./assets/imgs/reSizedFooterLogo.png"
+            alt="logo"
+            loading="lazy"
+            height="25px"
+          />
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

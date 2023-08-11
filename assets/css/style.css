@@ -698,6 +698,12 @@ footer {
   font-size: 14px;
 }
 
+.thankyouBody {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .thankyouRedirect,
 .thankyouRedirect a {
   display: flex;
@@ -729,9 +735,7 @@ footer {
 }
 
 .thankyouFooter {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  margin-top: auto;
 }
 
 @media (min-width: 600px) {

@@ -714,6 +714,10 @@ footer {
   font-weight: bold;
 }
 
+.thankyouRedirect {
+  padding-bottom: 5rem;
+}
+
 .thankyouHeading {
   background: #7843e9;
   width: 70%;

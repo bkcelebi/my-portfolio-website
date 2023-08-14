@@ -1,6 +1,6 @@
 # Portfolio
 
-By scrolling through this website, you are discovering this project right now. This was a personal project of mine to present myself and to showcase the work I have completed to date and some of the upcoming projects I have lined up.
+This was a personal project of mine to present myself and to showcase the work I have completed to date and some of the upcoming projects I have lined up.
 
 It is a frontend project built using HTML, CSS and Javascript and is being hosted on GitHub.
 
